@@ -1,0 +1,65 @@
+.footer {
+    background: var(--color-solid-black);
+    color: white;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  
+  .footerLeft {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footerLogo {
+    width: 160px;
+    margin-bottom: 12px;
+  }
+  
+  .footerRight {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .footerRight a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footerRight a:hover {
+    color: var(--gradient-orange); /* Replace with your accent color */
+  }
+  
+  @media (max-width: 768px) {
+    .footerContainer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footerRight {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .linkedinIconFooter {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    object-fit: contain;
+    aspect-ratio: 1/1;
+}

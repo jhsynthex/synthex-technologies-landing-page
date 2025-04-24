@@ -1,0 +1,114 @@
+.featuresContainer {
+    background-color: var(--color-white);
+    height: 3000px;
+}
+
+.featuresHeader {
+    margin-bottom: 60px;
+}
+
+.featuresContentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.simulationIllustration {
+    max-width: 1000px;  
+    width: 100%; 
+    height: auto;  
+    object-fit: contain;  
+    display: block;
+    margin: 0 auto; 
+}
+
+.featureCardContainer {
+    margin-top: 60px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 100px;
+    position: relative;
+}
+
+.featureCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    flex-shrink: 0; 
+    border-radius: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featureCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.featureCard h1 {
+    color: var(--color-black);
+    font-size: 1.2em;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.featureCard p {
+    color: var(--color-gray);
+    text-align: left;
+    line-height: 170%;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: .9em;
+}
+
+.featureCard img {
+    width: 100%;
+    max-width: 230px; /* <= make the img smaller */
+    height: auto;
+    object-fit: contain;
+}
+
+.dashboardIllustration {
+    max-width: 1000px;  
+    width: 100%; 
+    height: auto;  
+    object-fit: contain;  
+    display: block;
+    margin: 0 auto; 
+}
+
+@media screen and (max-width: 768px) {
+    .featuresContainer {
+      height: auto;
+      padding: 60px 20px;
+    }
+  
+    .featureCardContainer {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      justify-items: center;
+    }
+  
+    .featureCard {
+      max-width: 100%;
+      padding: 16px;
+    }
+  
+    .featureCard h1 {
+      font-size: 1em;
+      padding-left: 10px;
+    }
+  
+    .featureCard p {
+      font-size: 0.8em;
+      padding-left: 10px;
+    }
+  
+    .simulationIllustration,
+    .dashboardIllustration {
+      max-width: 100%;
+    }
+  }

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Privacy Policy</title>
+</head>
+<body>
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.metaKey && event.key.toLowerCase() === 'd') {
+                event.preventDefault();
+                const modal = document.getElementById('earlyAccessModal');
+                if (modal) {
+                    modal.style.display = 'block';
+                }
+            }
+        });
+    </script>
+    <header class="headerContainer">
+        <div class="container">
+          <div class="navContentContainer">
+            <a href="index.html" class="logoButton">
+              <img src="./images/logo.png" class="logo" />
+            </a>
+      
+            <div class="navButtonContainer">
+              <a href="index.html">Home</a>
+              <a href="devlogs.html">Dev Logs</a>
+              <a href="privacyPolicy.html">Privacy Policy</a>
+              <a href="contactUs.html">Contact Us</a>
+            </div>
+    
+            <div class="buttonContainer mobileOnly">
+              <button class="earlyAccessButton mobileHidden">
+                <p class="earlyAccessText">Early Access</p>
+                <div class="earlyAccessBorder">
+                  <img src="./images/ctrlIcon.svg"/>
+                </div>
+                <div class="DBorder">
+                  <p style="color: var(--color-gray)">D</p>
+                </div>
+              </button>
+              <button class="menuButton mobileOnly" onclick="toggleMobileMenu()">☰</button>
+            </div>
+          </div>
+      
+          <!-- Mobile dropdown menu -->
+          <div id="mobileMenu" class="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="devlogs.html">Dev Logs</a>
+            <a href="privacyPolicy.html">Privacy Policy</a>
+            <a href="contact.html">Contact Us</a>
+            <button class="earlyAccessButton">
+              <p class="earlyAccessText">Early Access</p>
+              <div class="earlyAccessBorder">
+                <img src="./images/ctrlIcon.svg" />
+              </div>
+              <div class="DBorder">
+                <p style="color: var(--color-gray)">D</p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </header>
+    <main>
+
+        <div class="privacyPolicyContainer">
+            <div class="container">
+                <div class="privacyPolicyContentContainer">
+                    <h1 class="privacyPolicyTitle">Privacy Policy</h1>
+      <p>Last updated: April 23, 2025</p>
+
+      <section>
+        <h2>Information We Collect</h2>
+        <p>
+          At Synthex Technologies, we only collect personal information that you voluntarily provide
+          through our Early Access form. This includes:
+        </p>
+        <ul>
+          <li>First Name</li>
+          <li>Last Name</li>
+          <li>Email Address</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>How We Use Your Information</h2>
+        <p>
+          The information you provide is used solely to:
+        </p>
+        <ul>
+          <li>Send you updates about our product</li>
+          <li>Inform you about early access opportunities</li>
+          <li>Provide exclusive news and insights related to Synthex Technologies</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Third-Party Services</h2>
+        <p>
+          We use Salesforce’s Web-to-Lead feature to securely collect and manage form submissions.
+          Your data is submitted directly to Salesforce and handled in accordance with their
+          <a href="https://www.salesforce.com/company/privacy/" target="_blank" rel="noopener noreferrer">
+            Privacy Policy
+          </a>.
+        </p>
+      </section>
+
+      <section>
+        <h2>Data Retention</h2>
+        <p>
+          We retain your information for as long as it is relevant to the purpose for which it was collected,
+          or until you request its removal.
+        </p>
+      </section>
+
+      <section>
+        <h2>Your Rights</h2>
+        <p>
+          You may request to update or delete your personal information at any time by contacting us at 
+          <a href="mailto:info@synthextechnologies.com">info@synthextechnologies.com</a>.
+        </p>
+      </section>
+
+      <section>
+        <h2>Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. Any changes will be posted on this page
+          with an updated effective date.
+        </p>
+      </section>
+
+      <section>
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions or concerns about this Privacy Policy, please contact us at 
+          <a href="mailto:info@synthextechnologies.com">info@synthextechnologies.com</a>.
+        </p>
+      </section>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+          <div class="footerContainer">
+            <div class="footerLeft">
+              <img src="./images/logoDark.png" alt="Synthex Logo" class="footerLogo" />
+              <p>&copy; 2025 Synthex Technologies. All rights reserved.</p>
+            </div>
+            <div class="footerRight">
+              <a href="index.html">Home</a> <!-- Corrected href for index.html -->
+              <a href="devlogs.html">Dev Logs</a> <!-- Corrected href for devlogs.html -->
+              <a href="privacyPolicy.html">Privacy Policy</a> <!-- Corrected href for privacyPolicy.html -->
+              <a href="/contact">Contact Us</a> <!-- Assuming contact is a route, if it's a file, use "contact.html" -->
+              <a href="https://www.linkedin.com/company/synthex-ai" target="_blank">
+                <img src="./images/linkedInIcon.png" class="linkedinIconFooter">
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    
+    <div id="earlyAccessModal" class="modal">
+        <div class="modalContent">
+          <span class="closeButton" onclick="closeModal()">&times;</span>
+          <h1><span class="pulseHighlight">Pulse</span> Early Access Signup</h1>
+          <p>Please enter your information below for early access, email updates, and exclusive information.</p>
+          <form 
+            id="earlyAccessForm"
+            action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DKc00000A4FmR" 
+            method="POST"
+          >
+            <input type="hidden" name="oid" value="00DKc00000A4FmR">
+            <input type="hidden" name="retURL" value="http://www.synthextechnologies.com">
+      
+            <input id="first_name" name="first_name" type="text" maxlength="40" placeholder="First Name" required>
+            <input id="last_name" name="last_name" type="text" maxlength="80" placeholder="Last Name" required>
+            <input id="email" name="email" type="email" maxlength="80" placeholder="Email" required>
+      
+            <button type="submit">Sign Up</button>
+            <div class="salesforceTag"><p>Powered by</p><a href="https://www.salesforce.com/"><img src="./images/salesforceLogo.png" class="salesforceLogo"></a></div>
+          </form>
+        </div>
+    </div>
+      <script src="./js/modal.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script src="./js/typeBox.js"></script>
+      <script src="./js/navPill.js"></script>
+      <script src="./js/toggleMenu.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+.infiniteCarousel {
+
+    padding: 10px 0;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    background: var(--color-white);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+
+  .infiniteCarousel > * {
+    flex: 0 0 100%;
+  }
+
+  .group {
+    display: flex;
+    gap: 16px;
+    padding-right: 16px;
+    will-change: transform;
+    animation: scrolling 60s linear infinite;
+  }
+
+  .infiniteCarousel:hover .group {
+    animation-play-state: paused;
+  }
+
+  .carouselCard {
+    flex: 0 0 auto;
+    min-width: 300px;
+    padding: 16px 24px;
+    border-radius: 12px;
+    color: var(---color-white);
+    font-size: 1.1rem;    
+    font-weight: 500;
+    text-align: left;
+    white-space: nowrap;
+    
+    border-width: 1px;
+  }
+
+  .carouselCard span { 
+    font-size: 1.2em;
+    font-weight: 700;
+    background: var(--gradient-orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+
+
+  @keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }

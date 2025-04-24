@@ -1,0 +1,161 @@
+/* Modal Base */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+  }
+  
+  /* Modal Content */
+  .modalContent {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    gap: 20px;
+    margin: 10% auto;
+    padding: 40px 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 0.3s ease;
+  }
+  
+  /* Animation for modal */
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .pulseHighlight {
+    background: var(--gradient-orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  .modalContent p {
+    color: var(--color-gray);
+    font-weight: 500;
+    line-height: 170%;
+  }
+  
+
+  .closeButton {
+    color: #aaa;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .closeButton:hover {
+    color: var(--color-solid-black);
+  }
+
+  #earlyAccessForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  #earlyAccessForm input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+  }
+  
+  #earlyAccessForm button {
+    padding: 12px;
+    background-color: var(--color-solid-black); 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #earlyAccessForm button:hover {
+    background: var(--gradient-orange);
+  }
+
+  .salesforceTag {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px
+  }
+
+  .salesforceLogo {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    object-fit: contain;
+    aspect-ratio: 1/1;
+  }
+
+  @media (max-width: 768px) {
+    .modalContent {
+      margin: 5% auto; /* Reduced margin for smaller screens */
+      padding: 20px 15px; /* Reduced padding for mobile */
+      width: 90%; /* Take up more width on smaller screens */
+      max-width: 350px; /* Reduce max width */
+    }
+  
+    .modal {
+      padding: 0 10px; /* Padding adjustment to make sure modal fits well */
+    }
+  }
+  
+  /* Modal background overlay */
+  .modal-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    z-index: 1000;
+  }
+  
+  /* Show modal and overlay when active */
+  .modal.open, .modal-overlay.open {
+    display: block;
+  }
+  
+  /* Close button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: var(--color-black);
+    cursor: pointer;
+  }

@@ -1,0 +1,19 @@
+@import url("./global/boilerplate.css");
+@import url("./global/header.css");
+@import url("./global/hero.css");
+@import url("./global/model.css");
+@import url("./global/investor.css");
+@import url("./global/team.css");
+@import url("./global/UIComponents/buttons.css");
+@import url("./global/solutions.css");
+@import url("./global/UIComponents/text.css");
+@import url("./global/features.css");
+@import url("./global/modal.css");
+@import url("./global/UIComponents/carousel.css");
+@import url("./global/footer.css");
+
+@import url("./global/pages/privacyPolicy.css");
+@import url("./global/pages/devlog.css");
+@import url("./global/pages/contactUs.css");
+
+

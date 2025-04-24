@@ -1,0 +1,8 @@
+.investorPitchContainer {
+    height: 700px;
+    background-color: black;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+

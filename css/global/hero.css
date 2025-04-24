@@ -1,0 +1,175 @@
+.heroContainer {
+    background: white;
+    height: 1400px;
+}
+
+.heroContentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    gap: 40px;
+}
+
+.heroTitle {
+    font-size: 5.5em;
+    font-weight: bold;
+    color: var(--color-solid-black);
+    text-align: center;
+    line-height: 1.2;
+    position: relative;
+}
+
+.heroContentContainer * {
+    text-align: center;
+}
+
+.heroTitle span {
+    background: var(--gradient-rainbow-horizontal);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heroSecondaryText {
+    color: var(--color-gray);
+    line-height: 170%;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroImage {
+    position: relative;
+    max-width: 1100px;  /* Adjust based on design needs */
+    height: auto;  /* Maintains aspect ratio */
+    object-fit: contain;  /* Ensures the whole image fits without distortion */
+    display: block;
+    margin-top: 0x; /* Moves image up */
+    border-radius: 15px;
+    top: 30px;
+}
+
+.heroImageText {
+    position: absolute;
+    font-weight: 600px;
+    text-align: left;
+    color: var(--color-white);
+    left: 50px;
+    bottom: 200px;
+}
+
+.typingPill {
+    background: var(--color-white);
+    border: 1px solid var(--color-light-gray);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 10px 24px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-black); 
+    background: var(--gradient-orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    min-height: 48px;
+    min-width: 320px;
+    text-align: center;
+  }
+
+  .typingPillCircle {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background-image: var(--gradient-orange);
+    border-radius: 50%;
+    display: inline-block;
+    }
+
+    .typingPillContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+
+
+
+
+  @media screen and (max-width: 768px) {
+    .heroContainer {
+        height: 2300px;
+    }
+    
+    .heroTitle {
+      font-size: 2.5em;
+    }
+
+    .heroSecondaryText {
+        font-size: .8em;
+    }
+  
+    .heroImage {
+      max-width: 90%;
+      top: 10px;
+      border-radius: 12px;
+    }
+  
+    .heroImageText {
+      left: 20px;
+      bottom: 100px;
+      font-size: 1rem;
+      max-width: 90%;
+    }
+  
+    .typingPill {
+      min-width: 220px;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  
+    .heroContainer {
+      height: auto;
+      padding-bottom: 60px;
+    }
+  
+    .heroContentContainer {
+      top: 60px;
+      gap: 32px;
+      padding: 0 16px;
+    }
+  
+    .heroSecondaryText {
+      padding: 0 12px;
+      font-size: 1rem;
+    }
+
+    .typingPill {
+        min-width: auto;
+        max-width: 100%;
+        width: fit-content;
+        padding: 6px 14px;
+        font-size: 0.85rem;
+        white-space: normal;
+        text-align: center;
+      }
+  }
+
+
+
+
+

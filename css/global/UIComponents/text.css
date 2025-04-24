@@ -1,0 +1,119 @@
+.primaryHeaderContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+} 
+
+.primaryQuoteContainer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    max-width: 800px;
+}
+
+.primaryQuoteContainer h1 {
+    font-weight: bold;
+    color: white;
+    font-size: 2.5em;
+}
+
+.primaryQuoteContainer p {
+    color: #9B9B9B;
+    line-height: 170%;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.primaryQuoteContainer h1 span {
+    background: var(--gradient-orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.primaryQuoteContainerDark {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    max-width: 800px;
+}
+
+
+.primaryQuoteContainerDark h1 {
+    font-weight: bold;
+    color: var(--color-solid-black);
+    font-size: 2.5em;
+}
+
+.primaryQuoteContainerDark p {
+    color: #9B9B9B;
+    line-height: 170%;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.primaryQuoteContainerDark h1 span {
+    background: var(--gradient-orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+    .primaryQuoteContainer p {
+      font-size: 0.8rem;
+    }
+
+    .primaryQuoteContainerDark p {
+        font-size: 0.8em;
+    }
+  }
+
+/*Category Signifier*/
+
+.categorySignifier {
+    border-style: solid;
+    border-color: var(--color-white);
+    border-radius: 5px;
+    padding: 5px 10px;
+    border-width: 1px;
+}
+
+.categorySignifier p {
+    color: var(--color-white);
+    font-size: .8em;
+    font-weight: 500;
+
+}
+
+/*Category Signifier Dark*/
+
+
+.categorySignifierDark {
+    border-style: solid;
+    border-color: var(--color-solid-black);
+    border-radius: 5px;
+    padding: 5px 10px;
+    border-width: 1px;
+}
+
+.categorySignifierDark p {
+    color: var(--color-solid-black);
+    font-size: .8em;
+    font-weight: 500;
+
+}

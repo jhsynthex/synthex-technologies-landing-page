@@ -1,0 +1,57 @@
+.solutionsContainer {
+    background-color: var(--color-solid-black);
+    height: 600px;
+}
+
+.solutionsContentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.solutionCardContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+
+.solutionCard {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.solutionCard h1 {
+    color: var(--color-white);
+    font-size: 1.5em;
+}
+
+
+.solutionCard p {
+    color: var(--color-gray);
+    line-height: 170%;
+}
+
+@media screen and (max-width: 768px) {
+    .solutionsContainer {
+      height: auto;
+      padding: 60px 20px;
+    }
+  
+    .solutionCardContainer {
+      flex-direction: column;
+      gap: 60px; /* reduce gap for vertical stacking */
+      align-items: center;
+    }
+  
+    .solutionCard h1 {
+      font-size: 1.25em;
+    }
+  
+    .solutionCard p {
+      font-size: .8rem;
+    }
+  }

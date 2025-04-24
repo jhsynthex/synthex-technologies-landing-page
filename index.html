@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Synthex Technologies</title>
+</head>
+<body>
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.metaKey && event.key.toLowerCase() === 'd') {
+                event.preventDefault();
+                const modal = document.getElementById('earlyAccessModal');
+                if (modal) {
+                    modal.style.display = 'block';
+                }
+            }
+        });
+    </script>
+    <header class="headerContainer">
+        <div class="container">
+          <div class="navContentContainer">
+            <a href="index.html" class="logoButton">
+              <img src="./images/logo.png" class="logo" />
+            </a>
+      
+            <div class="navButtonContainer">
+              <a href="index.html">Home</a>
+              <a href="devlogs.html">Dev Logs</a>
+              <a href="privacyPolicy.html">Privacy Policy</a>
+              <a href="contactUs.html">Contact Us</a>
+            </div>
+    
+            <div class="buttonContainer mobileOnly">
+              <button class="earlyAccessButton mobileHidden">
+                <p class="earlyAccessText">Early Access</p>
+                <div class="earlyAccessBorder">
+                  <img src="./images/ctrlIcon.svg"/>
+                </div>
+                <div class="DBorder">
+                  <p style="color: var(--color-gray)">D</p>
+                </div>
+              </button>
+              <button class="menuButton mobileOnly" onclick="toggleMobileMenu()">☰</button>
+            </div>
+          </div>
+      
+          <!-- Mobile dropdown menu -->
+          <div id="mobileMenu" class="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="devlogs.html">Dev Logs</a>
+            <a href="privacyPolicy.html">Privacy Policy</a>
+            <a href="contactUs.html">Contact Us</a>
+            <button class="earlyAccessButton">
+              <p class="earlyAccessText">Early Access</p>
+              <div class="earlyAccessBorder">
+                <img src="./images/ctrlIcon.svg" />
+              </div>
+              <div class="DBorder">
+                <p style="color: var(--color-gray)">D</p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </header>
+    <main>
+        <div class="heroContainer">
+            <div class="container">
+                <div class="heroContentContainer">
+                    <div class="typingPillContainer">
+                        <div class="typingPillCircle"><img src="./images/sparkle.png" class="sparkleIcon"></div>
+                        <div class="typingPill">
+                            <span id="typed"></span>
+                    </div>
+                </div>    
+                        <div class="mainHeroTextContainer">
+                            <h1 class="heroTitle">The All-Knowing<br><span>AI Copilot for Investing.</span></h1>
+                        </div>
+                        <div class="secondaryHeroTextContainer">
+                            <p class="heroSecondaryText">Pulse is an AI that analyzes global signals<br>to forecast market trends.</p>
+                        </div>
+                        
+                        <div class="buttonContainer">
+                            <button class="earlyAccessButton">
+                                <div>
+                                    <p class="earlyAccessText">Early Access</p>
+                                </div>
+                                <div class="earlyAccessBorder">
+                                    <img src="./images/ctrlIcon.svg">
+                                </div>
+                                <div class="DBorder">
+                                    <p style="color: var(--color-gray);">D</p>
+                                </div>
+                            </button>              
+                        </div>
+                    <div class="heroImageContainer">
+                        <img src="./images/heroIllustration.svg" class="heroImage">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="solutionsContainer">
+            <div class="container">
+                <div class="solutionsContentContainer">
+                    <div class="primaryHeaderContainer">
+                        <div class="categorySignifier">
+                            <p>Solutions</p>
+                        </div>
+                        <div class="primaryQuoteContainer">
+                            <h1>Here's How <span>Pulse Can Help.</span></h1>
+                            <p>Retail investors use Pulse to</p>
+                        </div>    
+                    </div>
+                    <div class="solutionCardContainer">
+                        <div class="solutionCard">
+                            <h1>Simulate Portfolio<br>Outcomes</h1>
+                            <p>Simulate and anticipate the<br>impact of global sentiment on<br>your portfolio.</p>
+                        </div>
+                        <div class="solutionCard">  
+                            <h1>Diagnose Portfolio<br>Vulnerabilities</h1>
+                            <p>Identify hidden risks and weak points<br>in your holdings under developing<br>macro and geopolitical events.
+                            </p>
+                        </div>
+                        <div class="solutionCard">
+                            <h1>Discover Emerging<br>Market Opportunities</h1>
+                            <p>Spot early trends and<br>market shifts fueled by<br>global sentiment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="featuresContainer">
+            <div class="container">
+                <div class="featuresContentContainer">
+                    <div class="primaryHeaderContainer">
+                        <div class="categorySignifierDark">
+                            <p>Features</p>
+                        </div>
+                        <div class="primaryQuoteContainerDark">
+                            <h1>From Signals to Strategy <span>With Ease.</span></h1>
+                            <p>Pulse is your portfolio's smartest companion.</p>
+                        </div>
+                    </div>
+                    <img src="./images/featuresAssets/simulationSVG.svg" class="simulationIllustration">
+                    <div class="featureCardContainer">
+                                <div class="featureCard">
+                                    <img src="./images/featuresAssets/syncPortfolio.svg">
+                                    <h1>Sync Your Portfolio</h1>
+                                    <p>Integrate your portfolio from<br>popular platforms such as<br>Robinhood and TD Ameritrade.</p>
+                                </div>
+                                <div class="featureCard">
+                                    <img src="./images/featuresAssets/questionStart.svg">
+                                    <h1>Start with a Question</h1>
+                                    <p>A simple chat interface to simulate<br>away. Suggests popular and<br>trending simulations.</p>
+                                </div>
+                                <div class="featureCard">
+                                    <img src="./images/featuresAssets/videoSim.svg">
+                                    <h1>Video Simulations</h1>
+                                    <p>AI-generated video walkthroughs<br>of your simulations using Runway.<br>Understanding beyond numbers<br>and graphs.</p>
+                                </div>
+                                <div class="featureCard">
+                                    <img src="./images/featuresAssets/predictiveReport.svg">
+                                    <h1>Predictive Reports</h1>
+                                    <p>Get clear, written insights into<br>your simulations that highlight<br>bearish and bullish pressure<br>zones within your portfolio. </p>
+                                </div>
+                    </div>
+                    <img src="./images/featuresAssets/dashboardSVG.svg" class="dashboardIllustration">
+                    <div class="featureCardContainer">
+                        <div class="featureCard">
+                            <img src="./images/featuresAssets/intelligentDash.svg">
+                            <h1>Intelligent Dashboard</h1>
+                            <p>A lightning-fast interface where<br>you can access your simulations<br>and view real-time indicators<br>impacting your portfolio.</p>
+                        </div>
+                        <div class="featureCard">
+                            <img src="./images/featuresAssets/pulseBarometer.svg">
+                            <h1>Pulse Barometer</h1>
+                            <p>The Pulse Barometer consolidates<br>all global indicators into a single<br>meter reading--from bearish to<br>bullish.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modelContainer">
+            <div class="container">
+                <div class="modelContentContainer">
+                    <div class="primaryHeaderContainer">
+                        <div class="categorySignifier">
+                            <p>Model</p>
+                        </div>
+                        <div class="primaryQuoteContainer">
+                            <h1>AI Trained on the <span>Signals of Now.</span></h1>
+                            <p>Pulse's proprietary machine learning model continuously ingests<br>live data to understand market sentiment at scale.</p>
+                        </div>
+                    </div>
+                    <div class="modelCardContainer">
+                        <div class="modelCard">
+                            <div class="orangeCircleSmall"><img src="./images/sparkle.png" class="sparkleIcon"></div>
+                            <h1>Geopolitical Events</h1>
+                            <p>Aggregated global event data and official government publications sourced from GDELT and web scraping.</p>
+                        </div>
+                        <div class="modelCard">
+                            <div class="orangeCircleSmall"><img src="./images/sparkle.png" class="sparkleIcon"></div>
+                            <h1>News Publications</h1>
+                            <p>News articles on current events and breaking developments from verified news APIs.</p>
+                        </div>
+                        <div class="modelCard">
+                            <div class="orangeCircleSmall"><img src="./images/sparkle.png" class="sparkleIcon"></div>
+                            <h1>Macroeconomic Indicators</h1>
+                            <p>CPI, unemployment, interest rates, consumer sentiment, and more — tracked and updated daily.</p>
+                        </div>
+                        <div class="modelCard">
+                            <div class="orangeCircleSmall"><img src="./images/sparkle.png" class="sparkleIcon"></div>
+                            <h1>Financial Market Signals</h1>
+                            <p>Price action, sector rotation, volatility levels, and key ticker data from major markets.</p>
+                        </div>
+                        <div class="modelCard">
+                            <div class="orangeCircleSmall"><img src="./images/sparkle.png" class="sparkleIcon"></div>
+                            <h1>Social Media Sentiment</h1>
+                            <p>Scraped in real-time from Reddit, X, Instagram, and other platforms.</p>
+                        </div>
+                        <div class="modelCard">
+                            <div class="orangeCircleSmall"><img src="./images/sparkle.png" class="sparkleIcon"></div>
+                            <h1>Insider Trading</h1>
+                            <p>All insider buy and sell transactions of all publicly listed companies.</p>
+                        </div>
+                    </div>
+                    <img src="./images/modelIllustration.svg">
+                </div>
+                
+
+
+            </div>
+        </div>
+        <div class="teamContainer">
+            <div class="container">
+                <div class="teamContentContainer">
+                    <div class="teamTextContainer">
+                        <div class="categorySignifierDark aligner">
+                            <p>Team</p>
+                        </div>
+                        <h1 class="teamSubtitle">The Synthex Technologies<br>Team</h1>
+                    </div>
+                    <div class="teamProfilesContainer">
+                        <div class="profileContainer">
+                            <img src="./images/profilePictures/matthewJeanty.jpg" class="profileImage">
+                            <h1>Matthew Jeanty</h1>
+                            <h2>CEO/Founder</h2>
+                            <a href="https://www.linkedin.com/in/matthew-jeanty-a42bbb328" target="_blank">
+                                <img src="./images/linkedInIcon.png" class="linkedinIcon">
+                            </a>
+                            <a href="https://www.upenn.edu/" target="_blank">
+                                <img src="./images/UofPennLogo.png" class="schoolLogo">
+                            </a>
+                        </div>
+                        <div class="profileContainer">
+                            <img src="./images/profilePictures/bridgetteMaurer.jpg" class="profileImage">
+                            <h1>Bridgette Maurer</h1>
+                            <h2>Chief Technology Officer</h2>
+                            <a href="https://www.linkedin.com/in/bridgette-maurer" target="_blank">
+                                <img src="./images/linkedInIcon.png" class="linkedinIcon">
+                            </a>
+                            <a href="https://www.stevens.edu/" target="_blank">
+                                <img src="./images/stevensLogo.png" class="schoolLogo">
+                            </a>
+                        </div>
+                        <div class="profileContainer">
+                            <img src="./images/profilePictures/josephHolzman.png" class="profileImage" alt="Joseph Holzman - UI/UX Lead Designer">
+                            <h1>Joseph Holzman</h1>
+                            <h2>UI/UX Lead Developer</h2>
+                            <a href="https://www.linkedin.com/in/joseph-holzman-36292520a" target="_blank">
+                                <img src="./images/linkedInIcon.png" class="linkedinIcon">
+                            </a>
+                            <a href="https://drew.edu/" target="_blank">
+                                <img src="./images/drewLogo.png" class="schoolLogo">
+                            </a>
+                        </div>
+                        <div class="profileContainer">
+                            <img src="./images/profilePictures/alexEdwing.jpeg" class="profileImage">
+                            <h1>Alexandra Edwing</h1>
+                            <h2>UI/UX Designer</h2>
+                            <a href="https://www.linkedin.com/in/alexandra-edwing-9b4389192" target="_blank">
+                                <img src="./images/linkedInIcon.png" class="linkedinIcon">
+                            </a>
+                            <a href="https://drew.edu/" target="_blank">
+                                <img src="./images/drewLogo.png" class="schoolLogo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+          <div class="footerContainer">
+            <div class="footerLeft">
+              <img src="./images/logoDark.png" alt="Synthex Logo" class="footerLogo" />
+              <p>&copy; 2025 Synthex Technologies. All rights reserved.</p>
+            </div>
+            <div class="footerRight">
+              <a href="index.html">Home</a> <!-- Corrected href for index.html -->
+              <a href="devlogs.html">Dev Logs</a> <!-- Corrected href for devlogs.html -->
+              <a href="privacyPolicy.html">Privacy Policy</a> <!-- Corrected href for privacyPolicy.html -->
+              <a href="contactUs.html">Contact Us</a> <!-- Assuming contact is a route, if it's a file, use "contact.html" -->
+              <a href="https://www.linkedin.com/company/synthex-ai" target="_blank">
+                <img src="./images/linkedInIcon.png" class="linkedinIconFooter">
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+    <div id="earlyAccessModal" class="modal">
+        <div class="modalContent">
+          <span class="closeButton" onclick="closeModal()">&times;</span>
+          <h1><span class="pulseHighlight">Pulse</span> Early Access Signup</h1>
+          <p>Please enter your information below for early access, email updates, and exclusive information.</p>
+          <form 
+            id="earlyAccessForm"
+            action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DKc00000A4FmR" 
+            method="POST"
+          >
+            <input type="hidden" name="oid" value="00DKc00000A4FmR">
+            <input type="hidden" name="retURL" value="http://www.synthextechnologies.com">
+      
+            <input id="first_name" name="first_name" type="text" maxlength="40" placeholder="First Name" required>
+            <input id="last_name" name="last_name" type="text" maxlength="80" placeholder="Last Name" required>
+            <input id="email" name="email" type="email" maxlength="80" placeholder="Email" required>
+      
+            <button type="submit">Sign Up</button>
+            <div class="salesforceTag"><p>Powered by</p><a href="https://www.salesforce.com/"><img src="./images/salesforceLogo.png" class="salesforceLogo"></a></div>
+          </form>
+        </div>
+    </div>
+      <script src="./js/modal.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script src="./js/typeBox.js"></script>
+      <script src="./js/navPill.js"></script>
+      <script src="./js/toggleMenu.js"></script>
+</body>
+</html>
