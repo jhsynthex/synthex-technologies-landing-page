@@ -74,8 +74,16 @@
 }
 
 @media screen and (max-width: 768px) {
+    .primaryQuoteContainer h1 {
+        font-size: 1.8em;
+    }
+    
     .primaryQuoteContainer p {
       font-size: 0.8rem;
+    }
+
+    .primaryQuoteContainerDark h1{
+        font-size: 1.8em;
     }
 
     .primaryQuoteContainerDark p {
@@ -117,3 +125,4 @@
     font-weight: 500;
 
 }
+
