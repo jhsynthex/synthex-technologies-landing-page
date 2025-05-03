@@ -1,5 +1,5 @@
 .teamContainer {
-    height: 900px;
+    height: 1300px;
     background-color: white;
 }
 
@@ -138,6 +138,6 @@
     }
 
     .teamContainer {
-        height: 2000px;
+        height: 2500px;
     }
 }
